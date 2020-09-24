@@ -5,6 +5,8 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
+file(GLOB SOURCE_FILES ${CMAKE_SOURCE_DIR}/*.cpp)
+
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds them for you.
@@ -17,12 +19,14 @@ add_library( # Sets the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-			 binding.cpp
+			 ${SOURCE_FILES}
 			 )
 
 include_directories(
 	"~/sdk/nodejs-mobile/src"
 	"~/sdk/nodejs-mobile/deps/v8/include"
+	"~/sdk/nodejs-mobile/deps/uv/include"
+	"~/sdk/nan"
 	)
 
 add_library( node
