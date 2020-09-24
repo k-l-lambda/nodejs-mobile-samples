@@ -41,3 +41,32 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 }
+
+
+/*afterEvaluate {
+	task copyLibs(type: Copy) {
+		println 'configure of copy libnativeLib.so'
+		//dependsOn "assembleDebug"
+
+		//doLast {
+			println 'copy libnativeLib.so'
+			from('build/intermediates/cmake/debug/obj/x86') {
+				//include 'libfunctionCall.so'
+				include '*.so'
+				//rename 'libfunctionCall.so', 'function-call.node'
+			}
+			//into project(':app').file('./src/main/assets/nodejs-project')
+			into ".."
+			rename { String fileName ->
+				fileName = "function-call.node"
+			}
+		//}
+	}
+}*/
+
+/*task copyLibs(type: Exec) {
+    workingDir "$projectDir"
+	println 'copy libnativeLib.so'
+    //commandLine 'cp ./build/intermediates/cmake/debug/obj/x86/libfunctionCall.so ../app/src/main/assets/nodejs-project/function-call.node'
+    commandLine 'sh', './copyLibs.sh'
+}*/
