@@ -14,7 +14,9 @@
       "buildCommand": "/home/xunan/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/x86_64\" native-lib",
       "abi": "x86_64",
       "output": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/build/intermediates/cmake/release/obj/x86_64/libnative-lib.so",
-      "runtimeFiles": []
+      "runtimeFiles": [
+        "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/libnode/bin/x86_64/libnode.so"
+      ]
     }
   }
 }

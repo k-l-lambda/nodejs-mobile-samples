@@ -1,7 +1,7 @@
 [
   {
     "level": "INFO",
-    "message": "Start JSON generation. Platform version: 21 min SDK version: armeabi-v7a",
+    "message": "Start JSON generation. Platform version: 26 min SDK version: armeabi-v7a",
     "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
     "tag": "release|armeabi-v7a"
   },
@@ -31,19 +31,13 @@
   },
   {
     "level": "INFO",
-    "message": "- expected json /home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a/android_gradle_build.json file is not present, will remove stale json folder",
-    "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
-    "tag": "release|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "- missing previous command file /home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a/build_command.txt, will remove stale json folder",
-    "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
-    "tag": "release|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
     "message": "- command changed from previous, will remove stale json folder",
+    "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
+    "tag": "release|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a\u0027",
     "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
     "tag": "release|armeabi-v7a"
   },
@@ -55,7 +49,7 @@
   },
   {
     "level": "INFO",
-    "message": "executing cmake Executable : /home/xunan/Android/Sdk/cmake/3.10.2.4988404/bin/cmake\narguments : \n-H/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app\n-DCMAKE_FIND_ROOT_PATH\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/prefab/armeabi-v7a/prefab\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DCMAKE_TOOLCHAIN_FILE\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake\n-DANDROID_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\n-DANDROID_PLATFORM\u003dandroid-21\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_NDK\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/build/intermediates/cmake/release/obj/armeabi-v7a\n-DCMAKE_MAKE_PROGRAM\u003d/home/xunan/Android/Sdk/cmake/3.10.2.4988404/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d21\n-DANDROID_STL\u003dc++_shared\n-B/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a\n-GNinja\njvmArgs : \n\n",
+    "message": "executing cmake Executable : /home/xunan/Android/Sdk/cmake/3.10.2.4988404/bin/cmake\narguments : \n-H/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app\n-DCMAKE_FIND_ROOT_PATH\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/prefab/armeabi-v7a/prefab\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DCMAKE_TOOLCHAIN_FILE\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake\n-DANDROID_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\n-DANDROID_PLATFORM\u003dandroid-26\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_NDK\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/build/intermediates/cmake/release/obj/armeabi-v7a\n-DCMAKE_MAKE_PROGRAM\u003d/home/xunan/Android/Sdk/cmake/3.10.2.4988404/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d26\n-DANDROID_STL\u003dc++_shared\n-B/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a\n-GNinja\njvmArgs : \n\n",
     "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
     "tag": "release|armeabi-v7a"
   },
@@ -97,7 +91,7 @@
   },
   {
     "level": "INFO",
-    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_FIND_ROOT_PATH\\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/prefab/armeabi-v7a/prefab\",\n    \"-DCMAKE_BUILD_TYPE\\u003dRelease\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003darmeabi-v7a\",\n    \"-DANDROID_NDK\\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\",\n    \"-DANDROID_PLATFORM\\u003dandroid-21\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darmeabi-v7a\",\n    \"-DCMAKE_ANDROID_NDK\\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/build/intermediates/cmake/release/obj/armeabi-v7a\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003d/home/xunan/Android/Sdk/cmake/3.10.2.4988404/bin/ninja\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d21\",\n    \"-DANDROID_STL\\u003dc++_shared\"\n  ]\n}\n",
+    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_FIND_ROOT_PATH\\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/prefab/armeabi-v7a/prefab\",\n    \"-DCMAKE_BUILD_TYPE\\u003dRelease\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003darmeabi-v7a\",\n    \"-DANDROID_NDK\\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\",\n    \"-DANDROID_PLATFORM\\u003dandroid-26\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darmeabi-v7a\",\n    \"-DCMAKE_ANDROID_NDK\\u003d/home/xunan/Android/Sdk/ndk/21.0.6113669\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003d/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/build/intermediates/cmake/release/obj/armeabi-v7a\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003d/home/xunan/Android/Sdk/cmake/3.10.2.4988404/bin/ninja\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d26\",\n    \"-DANDROID_STL\\u003dc++_shared\"\n  ]\n}\n",
     "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
     "tag": "release|armeabi-v7a"
   },
@@ -385,7 +379,7 @@
   },
   {
     "level": "INFO",
-    "message": "{\"configurations\":[{\"name\":\"Release\",\"projects\":[{\"buildDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a\",\"name\":\"Project\",\"sourceDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app\",\"targets\":[{\"artifacts\":[\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so\"],\"buildDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security   -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"native_lib_EXPORTS\"],\"includePath\":[{\"path\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/libnode/include/node\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"src/main/cpp/native-lib.cpp\"]}],\"fullName\":\"libnative-lib.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"../../../../libnode/bin/armeabi-v7a/libnode.so /home/xunan/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/liblog.so -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"native-lib\",\"sourceDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app\",\"sysroot\":\"/home/xunan/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
+    "message": "{\"configurations\":[{\"name\":\"Release\",\"projects\":[{\"buildDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a\",\"name\":\"Project\",\"sourceDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app\",\"targets\":[{\"artifacts\":[\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so\"],\"buildDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/.cxx/cmake/release/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security   -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"native_lib_EXPORTS\"],\"includePath\":[{\"path\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/libnode/include/node\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"src/main/cpp/native-lib.cpp\"]}],\"fullName\":\"libnative-lib.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"../../../../libnode/bin/armeabi-v7a/libnode.so /home/xunan/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/26/liblog.so -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"native-lib\",\"sourceDirectory\":\"/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app\",\"sysroot\":\"/home/xunan/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
     "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
     "tag": "release|armeabi-v7a"
   },

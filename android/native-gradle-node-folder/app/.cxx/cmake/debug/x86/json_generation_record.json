@@ -1,7 +1,7 @@
 [
   {
     "level": "INFO",
-    "message": "Start JSON generation. Platform version: 21 min SDK version: x86",
+    "message": "Start JSON generation. Platform version: 26 min SDK version: x86",
     "file": "/home/xunan/work/others/nodejs-mobile-samples/android/native-gradle-node-folder/app/CMakeLists.txt",
     "tag": "debug|x86"
   },
