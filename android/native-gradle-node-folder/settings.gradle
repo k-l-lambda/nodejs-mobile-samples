@@ -1,1 +1,2 @@
+include ':nativeLib'
 include ':app'
