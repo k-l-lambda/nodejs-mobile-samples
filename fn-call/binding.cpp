@@ -24,7 +24,7 @@ void Say(const v8::FunctionCallbackInfo<v8::Value>& info) {
 		Nan::Persistent<v8::Promise::Resolver>* persistent = new Nan::Persistent<v8::Promise::Resolver>(resolver);
 		auto pcontext = new Nan::Persistent<v8::Context>(context);
 
-		SayWorker *sw = new SayWorker(pcontext, persistent, 3, what);
+		SayWorker *sw = new SayWorker(pcontext, persistent, 0, what);
 		Nan::AsyncQueueWorker(sw);
 
 		info.GetReturnValue().Set(resolver->GetPromise());
