@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
-file(GLOB SOURCE_FILES ${CMAKE_SOURCE_DIR}/*.cpp)
+file(GLOB SOURCE_FILES ${CMAKE_SOURCE_DIR}/../../../fn-call/*.cpp)
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
@@ -38,7 +38,7 @@ set_target_properties( # Specifies the target library.
 		  # Specifies the parameter you want to define.
 		  PROPERTIES IMPORTED_LOCATION
 		  # Provides the path to the library you want to import.
-			${CMAKE_SOURCE_DIR}/../../../../app/libnode/bin/${ANDROID_ABI}/libnode.so )
+			${CMAKE_SOURCE_DIR}/../app/libnode/bin/${ANDROID_ABI}/libnode.so )
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
