@@ -17,7 +17,7 @@ SayWorker::SayWorker(Nan::Persistent<v8::Context>* context, Nan::Persistent<v8::
 SayWorker::~SayWorker() {}
 
 void SayWorker::Execute () {
-	//sleep(_wait);
+	sleep(_wait);
 
 	_result = "says: " + _what;
 }
