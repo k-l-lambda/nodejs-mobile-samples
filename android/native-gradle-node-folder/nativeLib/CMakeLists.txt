@@ -5,29 +5,11 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
-file(GLOB SOURCE_FILES ${CMAKE_SOURCE_DIR}/../../../fn-call/*.cpp)
+project(functionCall)
 
-# Creates and names a library, sets it as either STATIC
-# or SHARED, and provides the relative paths to its source code.
-# You can define multiple libraries, and CMake builds them for you.
-# Gradle automatically packages shared libraries with your APK.
+SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/../../../fn-call)
+include(${CMAKE_CURRENT_SOURCE_DIR}/../../../fn-call/fn-call.cmake)
 
-add_library( # Sets the name of the library.
-             functionCall
-
-             # Sets the library as a shared library.
-             SHARED
-
-             # Provides a relative path to your source file(s).
-			 ${SOURCE_FILES}
-			 )
-
-include_directories(
-	"~/sdk/nodejs-mobile/src"
-	"~/sdk/nodejs-mobile/deps/v8/include"
-	"~/sdk/nodejs-mobile/deps/uv/include"
-	"~/sdk/nan"
-	)
 
 add_library( node
 	SHARED
@@ -58,7 +40,7 @@ find_library( # Sets the name of the path variable.
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries( # Specifies the target library.
-						functionCall
+						${PROJECT_NAME}
 
                        # Links the target library to the log library
                        # included in the NDK.
