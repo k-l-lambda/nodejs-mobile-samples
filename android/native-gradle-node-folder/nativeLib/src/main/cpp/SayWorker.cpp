@@ -1,4 +1,6 @@
 
+#include <unistd.h>
+
 #include "SayWorker.h"
 
 
@@ -15,11 +17,14 @@ SayWorker::SayWorker(v8::Local<v8::Context> context, Nan::Persistent<v8::Promise
 SayWorker::~SayWorker() {}
 
 void SayWorker::Execute () {
+	//sleep(_wait);
+
 	_result = "says: " + _what;
 }
 
 void SayWorker::HandleOKCallback () {
 	Nan::HandleScope scope;
 	auto resolver = Nan::New(*_persistent);
-	resolver->Resolve(_context, Nan::New(_result).ToLocalChecked());
+	auto result = resolver->Resolve(_context, Nan::New(_result).ToLocalChecked());
+	(void)result;
 }
