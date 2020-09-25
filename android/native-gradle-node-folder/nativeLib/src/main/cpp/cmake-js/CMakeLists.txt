@@ -32,9 +32,9 @@ include_directories(
 	"~/sdk/nan"
 	)
 
-add_library( node
-	SHARED
-	IMPORTED )
+#add_library( node
+#	SHARED
+#	IMPORTED )
 
 # Gives our library file a .node extension without any "lib" prefix
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")

@@ -5,7 +5,7 @@
 
 
 
-SayWorker::SayWorker(v8::Local<v8::Context> context, Nan::Persistent<v8::Promise::Resolver> *persistent, int wait, v8::Local<v8::Object> &whatObj)
+SayWorker::SayWorker(Nan::Persistent<v8::Context>* context, Nan::Persistent<v8::Promise::Resolver>* persistent, int wait, v8::Local<v8::Object> &whatObj)
 	: AsyncWorker(NULL)
 	, _context(context)
 {
@@ -25,6 +25,7 @@ void SayWorker::Execute () {
 void SayWorker::HandleOKCallback () {
 	Nan::HandleScope scope;
 	auto resolver = Nan::New(*_persistent);
-	auto result = resolver->Resolve(_context, Nan::New(_result).ToLocalChecked());
+	auto context = Nan::New(*_context);
+	auto result = resolver->Resolve(context, Nan::New(_result).ToLocalChecked());
 	(void)result;
 }

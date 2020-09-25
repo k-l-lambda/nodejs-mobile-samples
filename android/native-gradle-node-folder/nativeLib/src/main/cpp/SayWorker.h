@@ -10,7 +10,7 @@
 class SayWorker : public Nan::AsyncWorker
 {
 public:
-	SayWorker(v8::Local<v8::Context> context, Nan::Persistent<v8::Promise::Resolver> *persistent, int wait, v8::Local<v8::Object> &whatObj);
+	SayWorker(Nan::Persistent<v8::Context>* context, Nan::Persistent<v8::Promise::Resolver>* persistent, int wait, v8::Local<v8::Object> &whatObj);
 
 private:
 	~SayWorker();
@@ -18,7 +18,7 @@ private:
 	virtual void Execute();
 	virtual void HandleOKCallback ();
 
-	v8::Local<v8::Context> _context;
+	Nan::Persistent<v8::Context>* _context;
 	int _wait;
 	std::string _what;
 	std::string _result;
